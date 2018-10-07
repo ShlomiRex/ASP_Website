@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VisualLightBox>
+    <Gallery version="2.5">
+        <Settings>
+            <AppName>WOW Slider</AppName>
+            <AppUrlS>WOWSlider.com</AppUrlS>
+            <AppVersion>4.8</AppVersion>
+            <AutoPlay>true</AutoPlay>
+            <Captions>true</Captions>
+            <CaptionsEffect>slide</CaptionsEffect>
+            <Controls>true</Controls>
+            <GalleryName>ProjectSave</GalleryName>
+            <GallerySuffix>1</GallerySuffix>
+            <HtmlCharset>UTF-8</HtmlCharset>
+            <ImageAspectRatio>true</ImageAspectRatio>
+            <ImageEffect>blinds</ImageEffect>
+            <ImageFillColor>#FFFFFF</ImageFillColor>
+            <ImageHeight>360</ImageHeight>
+            <ImageQuality>90</ImageQuality>
+            <ImageShrink2>false</ImageShrink2>
+            <ImageStretch>true</ImageStretch>
+            <ImageTemplate>C:/Program Files (x86)/WOW Slider/templates/backgnd/chess/</ImageTemplate>
+            <ImageTemplateName>Chess</ImageTemplateName>
+            <ImageWidth>960</ImageWidth>
+            <Images>true</Images>
+            <JoomlaType>2.5</JoomlaType>
+            <OneLoop>false</OneLoop>
+            <OrderRandom>false</OrderRandom>
+            <PlayPause>true</PlayPause>
+            <Preloader>false</Preloader>
+            <PublishFileName>E:/מדעי המחשב/כיתה י/אלכס - עבודות/Mission 3 - PayDay 2/New Design/Master Page/WOW Slider/index.html</PublishFileName>
+            <PublishIndex>index.html</PublishIndex>
+            <PublishPath>E:/מדעי המחשב/כיתה י/אלכס - עבודות/Mission 3 - PayDay 2/New Design/Master Page/WOW Slider</PublishPath>
+            <PublishPreview>true</PublishPreview>
+            <PublishType>file</PublishType>
+            <RelativePath>false</RelativePath>
+            <ShowBullets>true</ShowBullets>
+            <ShowTooltips>true</ShowTooltips>
+            <SlideshowDelay>20</SlideshowDelay>
+            <SlideshowDuration>20</SlideshowDuration>
+            <SoundEnable>0</SoundEnable>
+            <SoundFileName></SoundFileName>
+            <StopOnHover>false</StopOnHover>
+            <TemplateName>chess</TemplateName>
+            <ThumbAlign>bottom</ThumbAlign>
+            <ThumbFormat>jpg</ThumbFormat>
+            <ThumbHeight>48</ThumbHeight>
+            <ThumbQuality>90</ThumbQuality>
+            <ThumbWidth>0</ThumbWidth>
+            <Thumbnails>false</Thumbnails>
+            <TooltipPos>bottom</TooltipPos>
+            <noFrame>false</noFrame>
+        </Settings>
+        <Images RelativePath="false">
+            <Image>
+                <url>E:/מדעי המחשב/כיתה י/אלכס - עבודות/Mission 3 - PayDay 2/New Design/Master Page/a/Media/8.jpg</url>
+                <title>Badass</title>
+            </Image>
+            <Image>
+                <url>E:/מדעי המחשב/כיתה י/אלכס - עבודות/Mission 3 - PayDay 2/New Design/Master Page/a/Media/3.jpg</url>
+                <title>Kickass</title>
+            </Image>
+            <Image>
+                <url>E:/מדעי המחשב/כיתה י/אלכס - עבודות/Mission 3 - PayDay 2/New Design/Master Page/a/Media/2.jpg</url>
+                <title>Dizzy</title>
+            </Image>
+            <Image>
+                <url>E:/מדעי המחשב/כיתה י/אלכס - עבודות/Mission 3 - PayDay 2/New Design/Master Page/a/Media/1.jpg</url>
+                <title>Fight</title>
+            </Image>
+            <Image>
+                <url>E:/מדעי המחשב/כיתה י/אלכס - עבודות/Mission 3 - PayDay 2/New Design/Master Page/a/Media/4.jpg</url>
+                <title>Action</title>
+            </Image>
+            <Image>
+                <url>E:/מדעי המחשב/כיתה י/אלכס - עבודות/Mission 3 - PayDay 2/New Design/Master Page/a/Media/9.jpg</url>
+                <title>Annonymus</title>
+            </Image>
+            <Image>
+                <url>E:/מדעי המחשב/כיתה י/אלכס - עבודות/Mission 3 - PayDay 2/New Design/Master Page/a/Media/7.jpg</url>
+                <title>Mask</title>
+            </Image>
+            <Image>
+                <url>E:/מדעי המחשב/כיתה י/אלכס - עבודות/Mission 3 - PayDay 2/New Design/Master Page/a/Media/5.jpg</url>
+                <title>Bank</title>
+            </Image>
+            <Image>
+                <url>E:/מדעי המחשב/כיתה י/אלכס - עבודות/Mission 3 - PayDay 2/New Design/Master Page/a/Media/6.jpg</url>
+                <title>Money &amp; Cash</title>
+            </Image>
+        </Images>
+    </Gallery>
+</VisualLightBox>

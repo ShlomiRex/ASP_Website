@@ -1,0 +1,112 @@
+body.background
+{
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-image: url(a/Background3.jpg);
+}
+
+a.topHover:hover
+{
+    text-decoration:none; 
+	background-color:darkred; 
+	font-size:40px;
+	font-family: fantasy;
+}
+
+p.text
+{ 
+	font-size:20px;
+	font-family: fantasy;
+	color:lightskyblue;
+}
+
+p.titleText
+{
+	font-size:23px;
+	font-family:FangSong;
+	color:white;
+    margin-left: 50px;
+    text-align: left;
+}
+
+div.assets
+{
+	border:groove;
+	border-color:yellow;
+	margin-left:5%;
+	border-width:3px;
+	margin-top:2%;
+	float:left;
+	background-color:darkred;
+}
+
+ul.textTitleUL
+{
+	font-size:20px;
+	font-family: fantasy;
+	color:lightskyblue;
+    margin-left: 50px;
+    text-align: left;
+	text-decoration:none;
+}
+
+a.menuButtonsHover:hover
+{
+    text-decoration:none; 
+	background-color:red;
+	font-size:40px;
+	font-family: fantasy;
+}
+
+p.reqSettings
+{
+	color:white; 
+	text-align:left; 
+	margin-left:50px;
+}
+
+p.Header
+{
+	color: black;
+	font-family:FangSong;
+	font-size: 20px;
+	background-color: ButtonShadow;
+	text-align: center;
+	margin-left: 2%;
+	margin-right: 2%;
+	border: groove;
+	border-width: 10px;
+	border-color: yellowgreen;
+}
+
+p.TitleHead
+{
+	font-size:50px; color:#1F2E2E; font-family:'MV Boli'; margin-left:30%; margin-right: 30%;
+	border:ridge; border-color: lightblue; border-width: 20px; background-image:url(a/Background5.jpg);
+}
+
+img.CopyRight
+{
+	margin-top: 5%;
+}
+
+img.MediaImages
+{
+	float:left;width:480px; height: 270px;border:solid;border-color:white;border-width:2px;
+}
+
+span.RegisterText
+{
+	font-size:x-large; color:orange; text-align: left; font-family: Arial;
+}
+
+span.RegisterTextGener
+{
+	font-size:x-large; color:white; text-align: left;
+}
+
+span.DisplayInfoTextStyle
+{
+	font-size:x-large; color:white; text-align: left;
+}

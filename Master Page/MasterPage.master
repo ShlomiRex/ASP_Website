@@ -1,0 +1,115 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage"%>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+<link rel="stylesheet" href="StyleSheet.css" type="text/css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+.nav ul {list-style:none; margin:0; padding:0}
+.nav li {float:left; width:19.8%; background-color:darkslategrey; text-align:center; border-right:1px solid yellow; border-left:1px solid yellow; position:relative; height:30px; line-height:30px;}
+.nav li ul li {float:none; width:314px; text-align:left; padding-left:5px; border-top:1px solid blue;}
+.nav a {text-decoration:none; color:white; font-size:25px;}
+.nav li ul {position:absolute; top:30px; left:0; visibility:hidden;}
+.nav li:hover ul {visibility:visible;}
+.nav li:hover{background-color: moccasin; background-image:url(a/Background5.jpg)} /* HOVER OVER LINKS ON MENU BACKGROUND*/
+</style>
+
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="WOW Slider/engine1/style.css" />
+<script type="text/javascript" src="WOW Slider/engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+
+</head> <!-- HEAD EMD -->
+<body class="background">
+   
+<center><p style="font-size:40px; color:gold; font-family:'MV Boli'; margin-left:20%; margin-right: 20%;border:ridge; border-color:darkgrey; border-width: 20px; background-image:url(a/Background6.jpg)">
+<%
+    if (Session["isUserRegistered"] != null && (bool)Session["isUserRegistered"] == true)
+        Response.Write("Hello " + Session["name1"]);
+    else
+        Response.Write("Welcome Guest!");
+        
+    if (Application["visitorsOnline"] == null) Application["visitorsOnline"] = 0;
+    string htmlStringDisplayOnlineCounter = "Users Online: " + Application["visitorsOnline"] + "";
+    if ((int)Application["visitorsOnline"] < 0)
+         Application["visitorsOnline"] = 0;
+
+    if (Application["adminsOnline"] == null) Application["adminsOnline"] = 0;
+    string htmlStringDisplayOnlineCounterForAdmins = "Admins Online: " + Application["adminsOnline"] + "";
+    if ((int)Application["adminsOnline"] < 0)
+        Application["adminsOnline"] = 0;
+%>
+ </p><br /></center>
+    <div>
+        <h1><span style="background-color: white; color: black;"><% =htmlStringDisplayOnlineCounter %></span></h1>
+        <h1><span style="background-color: white; color: black;"><% =htmlStringDisplayOnlineCounterForAdmins %></span></h1>
+    </div>
+<hr style="height:10px; background-color:white; margin-right:0%; border:groove; border-width:10px; border-color:lightskyblue;" /><!-- START TOP MENU -->
+<div class="nav">
+ <ul>
+ <li><a href="Home.aspx"><b>Home</b></a></li>
+  <li>
+   <a><b>Missions</b></a>
+   <ul>
+    <li><a href="BigOil.aspx"><b>Big Oil</b></a></li>
+    <li><a href="JewerlyStore.aspx"><b>Jewerly Store</b></a></li>
+    <li><a href="Watchdogs.aspx"><b>Watchdogs</b></a></li>
+    <li><a href="FramingFrame.aspx"><b>Framing Frame</b></a></li>
+   </ul>
+  </li>
+
+  <li>
+   <a href="Media.aspx"><b>Media</b></a>
+     <ul>
+         <li><a href="Req.aspx"><b>Requierments</b></a></li>
+     </ul>
+  </li>
+
+<%
+    if (Session["isUserRegistered"] != null && (bool)Session["isUserRegistered"] == true)
+        Response.Write("<li><a href='LogIn.aspx'><b>Log Out</b></a></li>");
+
+    else if (Session["isUserRegistered"] == null)
+    {
+        if (Session["mone"] != null && (int)Session["mone"] == 0)
+            Response.Write("<li><a href='LogIn.aspx'><b>Blocked</b></a></li>");
+        else
+        {
+            Response.Write("<li><a href='LogIn.aspx'><b>Log In System</b></a>");
+            Response.Write("<ul><li><a href='Register.aspx'><b>Register</b></a></li></ul></li>");
+        }
+    }
+%>
+      <li>
+       <a><b>Other</b></a>
+       <ul>
+        <li><a href="DisplayProfile.aspx"><b>Display Profile</b></a></li>
+        <li><a href="Search.aspx"><b>Search</b></a></li>
+        <li><a href="AcceptTheOthers.aspx"><b>Accept The Others</b></a></li>
+        <% 
+            if (Session["isUserRegistered"] != null && (bool)Session["isUserRegistered"] == true)
+                Response.Write("<li><a href='ShowUserProfile.aspx'><b>My Profile</b></a></li>");
+        %>
+       </ul>
+      </li>
+ </ul>
+</div> <!-- END TOP MENU -->
+
+
+<br /><br /><hr style="height:10px; background-color:white; margin-right:0%; border:groove; border-width:10px; border-color:lightskyblue; margin-top:-3px;" /><br /><br />
+
+<div style="min-height:550px; border:solid; border-color:gold; margin-left:50px; margin-right:50px; background-image:url(a/Background.jpg); background-position:center;">
+<center>
+    <asp:contentplaceholder id="ContentPlaceHolder1" runat="server"></asp:contentplaceholder>
+    <br /><br />
+</center>
+</div>
+       <center>
+<img src="a/Copyright.png" class="CopyRight" alt="Copy Right" />
+        </center>
+
+    
+</body>
+</html>
